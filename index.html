@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Cancioness</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Mi Lista de Canciones
+        </h1>
+
+        <form id="song-form">
+            <div>
+                <label for="title">Título</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="author">Autor</label>
+                <input type="text" id="author">
+            </div>
+            <div>
+                <label for="year">Año de lanzamiento</label>
+                <input type="text" id="year"> 
+            </div>
+            <input type="submit" value="Add Song">
+        </form>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Año de lanzamiento</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="song-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
